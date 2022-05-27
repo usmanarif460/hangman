@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script src="./script.js" defer></script>
+ <link rel="stylesheet" href="/dist/output.css">
+
+  <title>Hangman</title>
+</head>
+<body class="text-gray-50 text-xl bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 font-bold">
+<div class=" h-[100vh] bg-gradient-to-r m-5 from-slate-900 via-purple-900 to-slate-900">
+  <h1 class="text-center text-2xl font-bold ">Hangman</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="/assests/images/0.jpg" alt="">
+    <p>Guess the Programming Language:
+      
+    </p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="bg-red-700 px-4 py-2 mt-5 text-gray-100 font-bold rounded-lg" onClick="reset()">Reset</button>
+  </div> 
+</div>
+<!-- component -->
+<!-- component -->
+<div id="modalLost" class= "modal hidden bg-slate-800 bg-opacity-50 justify-center items-center absolute top-0 right-0 bottom-0 left-0">
+  <div class="bg-white px-16 py-14 rounded-md text-center">
+    <h1 class="text-xl mb-4 font-bold text-slate-500">You have Lost The Game</h1>
+    <button onclick="reset()"  class="bg-indigo-500 px-4 py-2 rounded-md text-md text-white">Cancle</button>
+    <button class="bg-red-500 px-7 py-2 ml-2 rounded-md text-md text-white font-semibold">Play Again</button>
+  </div>
+</div>
+<script>  
+</script>
+
+</body>
+</html>
